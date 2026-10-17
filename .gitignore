@@ -1,0 +1,17 @@
+# Ignore everything unless explicitly allowed below.
+# Videos, datasets, model weights, results and local settings stay local.
+*
+
+# Repository rules and top-level source files.
+!/.gitignore
+!/*.py
+!/botsort_reid.yaml
+
+# Quantification source files.
+!/units/
+!/units/*.py
+
+# Figure-generation source files (not generated figures or source data).
+!/paper_figures/
+!/paper_figures/*.py
+!/paper_figures/*.js
