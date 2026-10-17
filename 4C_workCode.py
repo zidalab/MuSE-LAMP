@@ -28,10 +28,9 @@ import timm
 # User Configuration (在此处修改路径和参数)
 # -----------------------------------------------------------------------------
 
-# 视频文件列表 (支持添加不同文件夹的数据)
+# 默认测试视频；请从项目根目录运行。可替换为其他视频路径。
 VIDEO = [
-    r'E:/VsCode Project/DeepLamp_4channel/data/20260908 补B19实验/00B190-1.mp4',
-    r'E:/VsCode Project/DeepLamp_4channel/data/20260908 补B19实验/00B190-2.mp4',
+    r'Sample/02040607.mp4',
 ]
 
 

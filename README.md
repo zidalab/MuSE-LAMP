@@ -33,7 +33,7 @@ git lfs install
 git lfs pull
 ```
 
-The code uses Python with PyTorch, Ultralytics, timm, OpenCV, and supporting scientific computing libraries. Set up the required dependencies and update the video paths, model paths, and experiment-specific parameters in `4C_workCode.py`. Then run:
+The code uses Python with PyTorch, Ultralytics, timm, OpenCV, and supporting scientific computing libraries. After setting up the dependencies and downloading the LFS files, run the included example from the repository root:
 
 ```bash
 python 4C_workCode.py
@@ -41,11 +41,7 @@ python 4C_workCode.py
 
 Results include droplet tracking records and per-channel concentration summaries.
 
-To test the pipeline with the included example, set the `VIDEO` list in `4C_workCode.py` to the following and run the script from the repository root:
-
-```python
-VIDEO = ["Sample/02040607.mp4"]
-```
+The default configuration uses `Sample/02040607.mp4` and the included trained weights. For your own experiments, update the video paths and experiment-specific parameters in `4C_workCode.py`.
 
 Only three local weight files referenced by the code are included:
 
