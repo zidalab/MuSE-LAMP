@@ -26,7 +26,14 @@ Target identity is assigned through the experimental channel layout, while the c
 
 ## Usage
 
-The code uses Python with PyTorch, Ultralytics, timm, OpenCV, and supporting scientific computing libraries. Set up the required dependencies, provide the trained model weights, and update the video paths, model paths, and experiment-specific parameters in `4C_workCode.py`. Then run:
+Model weights are stored using [Git LFS](https://git-lfs.com/). After installing Git LFS and cloning this repository, download the weights with:
+
+```bash
+git lfs install
+git lfs pull
+```
+
+The code uses Python with PyTorch, Ultralytics, timm, OpenCV, and supporting scientific computing libraries. Set up the required dependencies and update the video paths, model paths, and experiment-specific parameters in `4C_workCode.py`. Then run:
 
 ```bash
 python 4C_workCode.py
@@ -34,4 +41,14 @@ python 4C_workCode.py
 
 Results include droplet tracking records and per-channel concentration summaries.
 
-This repository contains source code and configuration only. Experimental videos, datasets, trained weights, and generated results are not included.
+Only three local weight files referenced by the code are included:
+
+| Weight | Purpose |
+| --- | --- |
+| `runs/segment/seg_runs/droplet_seg_v2/weights/best.pt` | Trained droplet segmentation model |
+| `convnextv2b_cls_runs/ConvNeXtV2-B/best.pt` | Trained positive/negative droplet classifier |
+| `yolo11n-seg.pt` | Pretrained initialization for segmentation training |
+
+Classification training obtains its pretrained backbone through timm. Final-epoch checkpoints and unused legacy weights are excluded.
+
+Experimental videos, datasets, standalone plotting scripts, and generated results are not included.

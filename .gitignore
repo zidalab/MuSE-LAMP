@@ -1,9 +1,10 @@
 # Ignore everything unless explicitly allowed below.
-# Videos, datasets, model weights, results and local settings stay local.
+# Videos, datasets, generated results and local settings stay local.
 *
 
 # Repository rules.
 !/.gitignore
+!/.gitattributes
 !/README.md
 
 # Experimental video processing and random-frame inspection.
@@ -19,6 +20,18 @@
 # Droplet volume and concentration calculations.
 !/units/
 !/units/quantification.py
+
+# Only model weights loaded by the retained code (stored using Git LFS).
+!/yolo11n-seg.pt
+!/convnextv2b_cls_runs/
+!/convnextv2b_cls_runs/ConvNeXtV2-B/
+!/convnextv2b_cls_runs/ConvNeXtV2-B/best.pt
+!/runs/
+!/runs/segment/
+!/runs/segment/seg_runs/
+!/runs/segment/seg_runs/droplet_seg_v2/
+!/runs/segment/seg_runs/droplet_seg_v2/weights/
+!/runs/segment/seg_runs/droplet_seg_v2/weights/best.pt
 
 # Standalone plotting/Grad-CAM scripts and paper_figures/ stay ignored.
 # Add new functional source files explicitly; do not allow all *.py files.
