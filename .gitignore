@@ -4,6 +4,7 @@
 
 # Repository rules.
 !/.gitignore
+!/README.md
 
 # Experimental video processing and random-frame inspection.
 !/4C_workCode.py
