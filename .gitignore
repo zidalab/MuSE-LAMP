@@ -2,16 +2,22 @@
 # Videos, datasets, model weights, results and local settings stay local.
 *
 
-# Repository rules and top-level source files.
+# Repository rules.
 !/.gitignore
-!/*.py
+
+# Experimental video processing and random-frame inspection.
+!/4C_workCode.py
+!/4C_workCode_debug.py
 !/botsort_reid.yaml
 
-# Quantification source files.
-!/units/
-!/units/*.py
+# Model training and dataset conversion.
+!/train_ConvNeXtV2-B_cls.py
+!/train_seg_yolo.py
+!/train_yolov11.py
 
-# Figure-generation source files (not generated figures or source data).
-!/paper_figures/
-!/paper_figures/*.py
-!/paper_figures/*.js
+# Droplet volume and concentration calculations.
+!/units/
+!/units/quantification.py
+
+# Standalone plotting/Grad-CAM scripts and paper_figures/ stay ignored.
+# Add new functional source files explicitly; do not allow all *.py files.
