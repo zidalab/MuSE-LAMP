@@ -26,7 +26,7 @@ Target identity is assigned through the experimental channel layout, while the c
 
 ## Usage
 
-Model weights are stored using [Git LFS](https://git-lfs.com/). After installing Git LFS and cloning this repository, download the weights with:
+Model weights and the example video are stored using [Git LFS](https://git-lfs.com/). After installing Git LFS and cloning this repository, download them with:
 
 ```bash
 git lfs install
@@ -41,6 +41,12 @@ python 4C_workCode.py
 
 Results include droplet tracking records and per-channel concentration summaries.
 
+To test the pipeline with the included example, set the `VIDEO` list in `4C_workCode.py` to the following and run the script from the repository root:
+
+```python
+VIDEO = ["Sample/02040607.mp4"]
+```
+
 Only three local weight files referenced by the code are included:
 
 | Weight | Purpose |
@@ -51,4 +57,4 @@ Only three local weight files referenced by the code are included:
 
 Classification training obtains its pretrained backbone through timm. Final-epoch checkpoints and unused legacy weights are excluded.
 
-Experimental videos, datasets, standalone plotting scripts, and generated results are not included.
+One example video is provided in `Sample/` for testing. Other experimental videos, datasets, standalone plotting scripts, and generated results are not included.

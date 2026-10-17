@@ -1,5 +1,5 @@
 # Ignore everything unless explicitly allowed below.
-# Videos, datasets, generated results and local settings stay local.
+# Other videos, datasets, generated results and local settings stay local.
 *
 
 # Repository rules.
@@ -20,6 +20,10 @@
 # Droplet volume and concentration calculations.
 !/units/
 !/units/quantification.py
+
+# Example video for testing (stored using Git LFS).
+!/Sample/
+!/Sample/02040607.mp4
 
 # Only model weights loaded by the retained code (stored using Git LFS).
 !/yolo11n-seg.pt
