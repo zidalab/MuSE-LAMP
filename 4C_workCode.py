@@ -30,8 +30,8 @@ import timm
 
 # 视频文件列表 (支持添加不同文件夹的数据)
 VIDEO = [
-    r'E:/VsCode Project/DeepLamp_4channel/data/20260908 补B19实验/00B190-1.mp4',
-    r'E:/VsCode Project/DeepLamp_4channel/data/20260908 补B19实验/00B190-2.mp4',
+
+  
 ]
 
 
