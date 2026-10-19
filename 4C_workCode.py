@@ -30,7 +30,7 @@ import timm
 
 # 默认测试视频；请从项目根目录运行。可替换为其他视频路径。
 VIDEO = [
-    r'Sample/02040607.mp4',
+    r'Sample/SAMPLE.mp4',
 ]
 
 

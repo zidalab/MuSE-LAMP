@@ -1,2 +1,2 @@
 *.pt filter=lfs diff=lfs merge=lfs -text
-/Sample/02040607.mp4 filter=lfs diff=lfs merge=lfs -text
+/Sample/SAMPLE.mp4 filter=lfs diff=lfs merge=lfs -text

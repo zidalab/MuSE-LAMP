@@ -41,7 +41,7 @@ python 4C_workCode.py
 
 Results include droplet tracking records and per-channel concentration summaries.
 
-The default configuration uses `Sample/02040607.mp4` and the included trained weights. For your own experiments, update the video paths and experiment-specific parameters in `4C_workCode.py`.
+The default configuration uses `Sample/SAMPLE.mp4` and the included trained weights. For your own experiments, update the video paths and experiment-specific parameters in `4C_workCode.py`.
 
 Only three local weight files referenced by the code are included:
 

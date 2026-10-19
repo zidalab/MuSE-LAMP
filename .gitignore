@@ -23,7 +23,7 @@
 
 # Example video for testing (stored using Git LFS).
 !/Sample/
-!/Sample/02040607.mp4
+!/Sample/SAMPLE.mp4
 
 # Only model weights loaded by the retained code (stored using Git LFS).
 !/yolo11n-seg.pt
